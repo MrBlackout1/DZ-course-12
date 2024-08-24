@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+
+
+    implementation 'org.hibernate.orm:hibernate-core:6.5.2.Final'
+    testImplementation 'com.h2database:h2:2.2.224'
+    implementation 'com.h2database:h2:2.2.224'
+    implementation 'org.flywaydb:flyway-core:10.17.2'
+
+
+}
+
+
+
+test {
+    useJUnitPlatform()
+}
